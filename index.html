@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <h1>CLASICO</h1>
+            <input id="result" type="text" readonly placeholder="0">
+            
+            <div class="buttons">
+                <div class="button-item" id="black"><button onclick="calcClear()" >C</button></div>
+                <div class="button-item" id="black"><button onclick="displayContent('%')"><i class="fa-solid fa-percent"></i></button></div>
+                <div class="button-item" id="black"><button onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button></div>
+                <div class="button-item" id="black"><button onclick="displayContent('/')"><i class="fa-solid fa-divide"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('7')"><i class="fa-solid fa-7"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('8')"><i class="fa-solid fa-8"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('9')"><i class="fa-solid fa-9"></i></button></div>
+                <div class="button-item" id="black"><button onclick="displayContent('*')"><i class="fa-solid fa-xmark"></i></button></div>
+                <div class="button-item" ><button onclick="displayContent('4')"><i class="fa-solid fa-4"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('5')"><i class="fa-solid fa-5"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('6')"><i class="fa-solid fa-6"></i></button></div>
+                <div class="button-item" id="black"><button onclick="displayContent('-')"><i class="fa-solid fa-minus"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('1')"><i class="fa-solid fa-1"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('2')"><i class="fa-solid fa-2"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('3')"><i class="fa-solid fa-3"></i></button></div>
+                <div class="button-item" id="black"><button onclick="displayContent('+')"><i class="fa-solid fa-plus"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('00')">00</button></div>
+                <div class="button-item"><button onclick="displayContent('0')"><i class="fa-solid fa-0"></i></button></div>
+                <div class="button-item"><button onclick="displayContent('.')">.</button></div>
+                <div class="button-item" id="black"><button onclick="calc()"><i class="fa-solid fa-equals"></i></button></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
